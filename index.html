@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Pirate’s Kiss Kitchen – Caribbean, Cajun & Southern Catering for the Bay Area" />
+  <meta name="author" content="Pirate’s Kiss Team" />
+  <title>Pirate’s Kiss Kitchen | Soul Food Catering</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts for Cursive Menu Headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS (optional overrides) -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Tailwind CDN does not support @apply, so we include minimal overrides here */
+    .font-cursive {
+      font-family: "Dancing Script", cursive;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased leading-relaxed font-sans">
+  <!-- Site Wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- 🔥 Header (Logo + Nav) -->
+    <header class="w-full bg-black text-white p-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Pirate’s Kiss Kitchen</h1>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#gallery" class="hover:underline">Gallery</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <!-- (Optional: add a mobile hamburger button here later) -->
+    </header>
+
+    <!-- 🌟 Hero Section (Below Header) -->
+    <section
+      id="hero"
+      class="bg-black text-white flex flex-col items-center justify-center text-center px-6 py-24 md:py-36"
+    >
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-4 tracking-tight">
+        Soul on a Plate.<br class="hidden md:block" />
+        Flavor That Travels.
+      </h2>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+        Caribbean, Cajun & Southern Catering serving the Bay Area and beyond—weddings, backyard
+        BBQs, private dinners &amp; more.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#menu" class="bg-white text-black font-semibold px-6 py-3 rounded hover:bg-gray-200 transition">
+          View Menu
+        </a>
+        <a href="#contact" class="border border-white text-white px-6 py-3 font-semibold rounded hover:bg-white hover:text-black transition">
+          Book an Event
+        </a>
+      </div>
+    </section>
+
+    <!-- 💡 About Section -->
+    <section id="about" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-4 text-black">Meet Chef Tony</h3>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            With roots deep in Southern soul food and Caribbean spice, Chef Tony has spent years
+            crafting a menu that celebrates culture, flavor, and fire. His smoked meats, spiced
+            rubs, and comfort classics are the heart of every Pirate’s Kiss event.
+          </p>
+          <p class="text-gray-600">
+            Whether it’s a backyard BBQ or a private in-home dinner, Chef Tony brings bold flavor
+            and unforgettable presence to every gathering.
+          </p>
+        </div>
+        <!-- Image -->
+        <div>
+          <img
+            src="images/IMG_3715.png"
+            alt="Chef Tony plating a dish"
+            class="mx-auto rounded shadow-lg object-cover h-[300px] w-full max-w-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍽 Services Section (Updated for Symmetry) -->
+    <section id="services" class="py-16 px-6 md:px-12 lg:px-24">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          From backyard BBQs to elegant private dinners, we bring soulful Caribbean, Cajun, and Southern flavors to every occasion.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        <!-- Service 1: Backyard BBQ -->
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+          <div class="bg-red-500 text-white rounded-full p-4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 9a9 9 0 0118 0c0 3.866-2.686 7-6 7H9c-3.314 0-6-3.134-6-7z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 12v9m-3-3h6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Backyard BBQ</h3>
+          <p class="text-gray-600 text-center">
+            Full smoker setup, slow-smoked meats, classic sides, and that authentic pit-style experience.
+          </p>
+        </div>
+
+        <!-- Service 2: Private Chef Dinners -->
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+          <div class="bg-yellow-500 text-white rounded-full p-4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8c-1.657 0-3 1.343-3 3v5h6v-5c0-1.657-1.343-3-3-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 8v5a7 7 0 0014 0V8" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Private Chef Dinners</h3>
+          <p class="text-gray-600 text-center">
+            Intimate, in-home dining experiences—Chef Tony crafts customized menus for special evenings.
+          </p>
+        </div>
+
+        <!-- Service 3: Weddings & Receptions -->
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+          <div class="bg-pink-500 text-white rounded-full p-4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 7v10a4 4 0 004 4h10a4 4 0 004-4V7M16 3v4M8 3v4M3 11h18" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Weddings &amp; Receptions</h3>
+          <p class="text-gray-600 text-center">
+            From plated dinners to buffet spreads, we design a menu that complements your special day perfectly.
+          </p>
+        </div>
+
+        <!-- Service 4: Corporate Catering -->
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition">
+          <div class="bg-blue-500 text-white rounded-full p-4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11 17a1 1 0 001 1h2a1 1 0 001-1v-4h2l-4-4-4 4h2v4z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 8v8a7 7 0 0014 0V8" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Corporate Catering</h3>
+          <p class="text-gray-600 text-center">
+            Impress clients and reward teams with flavorful, laid-back fare—lunches, mixers, and more.
+          </p>
+        </div>
+
+        <!-- Service 5: Custom Events & Pop-Ups (Centered) -->
+        <div class="sm:col-span-2 lg:col-span-2 flex flex-col items-center bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition max-w-md mx-auto">
+          <div class="bg-green-500 text-white rounded-full p-4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 15V5a2 2 0 012-2h12a2 2 0 012 2v10" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 21v-6h6v6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Custom Events &amp; Pop-Ups</h3>
+          <p class="text-gray-600 text-center">
+            Unique culinary experiences—pop-up dinners, festival booths, and anything you can imagine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍴 Menu Highlights Section (No Fixed Dish Prices) -->
+    <section id="menu" class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+      <div class="max-w-6xl mx-auto text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Menu Highlights</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-2">
+          Below are a few of Chef Tony’s signature dishes. Catering packages start at
+          <span class="font-semibold">$25 / person</span> for a basic menu.
+        </p>
+        <p class="text-gray-500 italic">
+          (Exact pricing varies based on guest count and custom menu requests. Inquire for a detailed quote.)
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Dish 1 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/jerk-chicken-6.png"
+            alt="Smoked Jerk Chicken"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Smoked Jerk Chicken</h3>
+            <p class="text-gray-600 flex-grow">
+              Juicy chicken marinated in a secret blend of jerk spices, slow-smoked to perfection over hickory wood.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/mac&amp;cheese.png"
+            alt="Mac &amp; Cheese with Cajun Crust"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Mac &amp; Cheese with Cajun Crust</h3>
+            <p class="text-gray-600 flex-grow">
+              Creamy four-cheese elbow pasta with a crunchy, spiced breadcrumb topping—Chef Tony’s soul food classic.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/collardgreen.png"
+            alt="Garlic Collard Greens"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Garlic Collard Greens</h3>
+            <p class="text-gray-600 flex-grow">
+              Fresh collards sautéed with garlic, smoked ham hocks, and a hint of red pepper—comfort served right.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 4 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/honeyribs.png"
+            alt="Honey-Lacquered Ribs"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Honey-Lacquered Ribs</h3>
+            <p class="text-gray-600 flex-grow">
+              Fall-off-the-bone ribs basted in a sweet and spicy honey glaze, smoked low and slow for hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 5 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/Seafood-Gumbo-Recipe1-RICE.png"
+            alt="Seafood Gumbo"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Seafood Gumbo</h3>
+            <p class="text-gray-600 flex-grow">
+              Rich roux base loaded with shrimp, crab, Andouille sausage, okra, and fragrant Creole spices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 6 -->
+        <div class="flex flex-col bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img
+            src="images/DK6A5854-680x1020.png"
+            alt="Fried Plantains"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-xl font-semibold mb-2">Fried Plantains</h3>
+            <p class="text-gray-600 flex-grow">
+              Sweet Caribbean-style plantains, caramelized golden and served piping hot—perfect complement to any meal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍽️ Broader Menu Preview Section (Inline Tailwind) -->
+    <section id="menu-preview" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <!-- Section Title & Intro -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl text-gray-900 font-cursive">Chef Tony’s Signature Menu</h2>
+          <p class="mt-2 text-gray-600 max-w-2xl mx-auto">
+            Every dish is handcrafted from scratch using our own-made butters, sauces, rubs, and spices.
+            Many dishes can be tailored for dietary needs (gluten-free, dairy-free, vegetarian), but some
+            items may not accommodate all restrictions. We will consult closely and do our best to make
+            necessary changes within our control. Please inquire for details or allergy concerns.
+          </p>
+        </div>
+
+        <!-- Menu Categories & Items Grid -->
+        <div class="grid gap-12 md:grid-cols-2">
+          <!-- Category: Proteins -->
+          <div>
+            <h3 class="border-b border-gray-300 pb-2 mb-6 text-2xl text-gray-800 font-cursive">
+              Proteins
+            </h3>
+
+            <!-- Item: Smoked Jerk Chicken -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">Smoked Jerk Chicken</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Our secret jerk blend is house-ground—featuring allspice, scotch bonnet, thyme, and
+                garlic. Marinated for 24 hours, then slow-smoked over hickory—juicy, tender, and bold
+                with Caribbean heat. <span class="font-normal">(Gluten-free / can be made dairy-free)</span>
+              </p>
+            </div>
+
+            <!-- Item: Honey-Lacquered Baby Back Ribs -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">
+                Honey-Lacquered Baby Back Ribs
+              </h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Fall-off-the-bone ribs glazed in our signature honey-smoke sauce (local honey, black
+                pepper, cayenne, and Chef’s smoky chili paste). Slow-cooked for 6 hours for perfect
+                tenderness. <span class="font-normal">(Can be made spicy-mild upon request)</span>
+              </p>
+            </div>
+
+            <!-- Item: Andouille Sausage & Crab Gumbo -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">
+                Andouille Sausage &amp; Crab Gumbo
+              </h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                A rich brown roux base loaded with house-made Andouille (spiced by Chef Tony), fresh Gulf
+                crab, shrimp, okra, and Creole trinity veggies. Simmered low and slow with in-house
+                seasoned stock. <span class="font-normal">(Gluten-free; contains shellfish)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Category: Sides & Veggies -->
+          <div>
+            <h3 class="border-b border-gray-300 pb-2 mb-6 text-2xl text-gray-800 font-cursive">
+              Sides &amp; Veggies
+            </h3>
+
+            <!-- Item: Mac & Cheese with Cajun Crust -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">
+                Mac &amp; Cheese with Cajun Crust
+              </h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Creamy four-cheese elbow pasta (sharp cheddar, Monterey Jack, Parmesan, smoked Gouda)
+                baked under a crunchy, spiced cornbread crumble—hot, bubbly, and rich.
+                <span class="font-normal">(Vegetarian; can be made gluten-free with GF pasta)</span>
+              </p>
+            </div>
+
+            <!-- Item: Garlic Collard Greens -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">Garlic Collard Greens</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Fresh collards gently braised in house-rendered ham hocks (or smoked turkey for a veggie
+                option), with roasted garlic, onion, and a dash of apple cider vinegar.
+                <span class="font-normal">(Vegetarian option available)</span>
+              </p>
+            </div>
+
+            <!-- Item: Red Beans &amp; Rice -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">Red Beans &amp; Rice</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                A New Orleans classic—slow-simmered red beans with smoked ham hocks, onion, celery,
+                bell pepper, and Chef’s Cajun spice blend, served over steamed jasmine rice.
+                <span class="font-normal">(Gluten-free)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Category: Breads & Extras -->
+          <div>
+            <h3 class="border-b border-gray-300 pb-2 mb-6 text-2xl text-gray-800 font-cursive">
+              Breads &amp; Extras
+            </h3>
+
+            <!-- Item: Buttermilk Cornbread -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">Buttermilk Cornbread</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Handmade daily with stone-ground cornmeal, cultured buttermilk, and a hint of honey.
+                Baked golden, served warm with herb-infused whipped butter (all in-house made).
+                <span class="font-normal">(Vegetarian)</span>
+              </p>
+            </div>
+
+            <!-- Item: Fried Plantains -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">Fried Plantains</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Ripe Caribbean plantains, thin-sliced, fried until caramelized, and tossed in a light
+                brown-sugar glaze. The perfect sweet side to spicy mains.
+                <span class="font-normal">(Vegan / gluten-free)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Category: Desserts & Condiments -->
+          <div>
+            <h3 class="border-b border-gray-300 pb-2 mb-6 text-2xl text-gray-800 font-cursive">
+              Desserts &amp; Condiments
+            </h3>
+
+            <!-- Item: Peach Cobbler with Bourbon Glaze -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">
+                Peach Cobbler with Bourbon Glaze
+              </h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Southern-style cobbler using local farm peaches, cinnamon, nutmeg, and a buttery biscuit
+                topping. Drizzled with a house-made bourbon caramel (alcohol cooked off).
+                <span class="font-normal">(Vegetarian; contains dairy)</span>
+              </p>
+            </div>
+
+            <!-- Item: House-Made Hot Sauce Trio -->
+            <div>
+              <h4 class="text-lg font-bold text-gray-900 mb-1">House-Made Hot Sauce Trio</h4>
+              <p class="text-gray-700 italic mb-6 leading-relaxed">
+                Three unique blends—Caribbean Scotch Bonnet &amp; Pineapple, Smoky Chipotle &amp; Honey,
+                and Fiery Habanero &amp; Garlic. All crafted in-house with organic peppers, vinegar, and
+                secret spice blends.
+                <span class="font-normal">(Vegan / gluten-free)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Button: Full Menu Page -->
+        <div class="text-center mt-12">
+          <a
+            href="full-menu.html"
+            class="inline-block bg-black text-white font-semibold px-8 py-3 rounded hover:bg-gray-800 transition"
+          >
+            View the Full Menu &amp; Packages
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📷 Gallery Section (Placeholder) -->
+    <section id="gallery" class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Gallery</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          A glimpse of Pirate’s Kiss Kitchen in action—beautiful setups, happy guests, and mouth-watering plating.
+        </p>
+      </div>
+      <!-- Example Grid: Replace with actual images -->
+      <div class="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <img src="images/outdoor.png" alt="Event Photo 1" class="w-full h-64 object-cover rounded shadow-lg" />
+        <img src="images/outdoor2.png" alt="Event Photo 2" class="w-full h-64 object-cover rounded shadow-lg" />
+        <img src="images/outdoor4.png" alt="Event Photo 3" class="w-full h-64 object-cover rounded shadow-lg" />
+        <!-- Add more as needed -->
+      </div>
+    </section>
+
+    <!-- 🗣 Testimonials Section (Placeholder) -->
+    <section id="testimonials" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What Clients Are Saying</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Real feedback from families, brides, and corporate teams who experienced Pirate’s Kiss Kitchen.
+        </p>
+      </div>
+      <!-- Example: Simple grid of quotes -->
+      <div class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">
+            “The best BBQ I’ve ever had. Our guests still talk about the mac &amp; cheese!”
+          </p>
+          <p class="text-gray-900 font-semibold">– Danielle R., Oakland</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">
+            “Chef Tony MADE our wedding. 5 stars isn’t enough.”
+          </p>
+          <p class="text-gray-900 font-semibold">– Julian &amp; Marcus, Berkeley</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">
+            “Our corporate retreat never tasted this good—people are still talking about it.”
+          </p>
+          <p class="text-gray-900 font-semibold">– TechCorp, San Jose</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📨 Booking Form Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Book Your Event</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Fill out the form below and we’ll get back to you within 24 hours with a custom quote.
+        </p>
+      </div>
+      <!-- Example Formspree Form -->
+      <form
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+        class="max-w-4xl mx-auto grid gap-6 sm:grid-cols-2"
+      >
+        <input type="text" name="name" placeholder="Name" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="email" name="email" placeholder="Email" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="tel" name="phone" placeholder="Phone"
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="text" name="event_type" placeholder="Event Type (e.g., Wedding, BBQ)" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="date" name="event_date" placeholder="Event Date" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="text" name="event_location" placeholder="Event Location" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="number" name="guest_count" placeholder="Estimated Guest Count" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="text" name="budget" placeholder="Budget Range"
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <input type="text" name="dietary_restrictions" placeholder="Dietary Restrictions"
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" />
+        <textarea name="notes" rows="4" placeholder="Additional Notes"
+                  class="sm:col-span-2 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
+        <button type="submit"
+                class="sm:col-span-2 bg-black text-white font-semibold px-8 py-3 rounded hover:bg-gray-800 transition">
+          Submit Inquiry
+        </button>
+      </form>
+    </section>
+
+    <!-- 📩 Footer -->
+    <footer class="mt-auto bg-black text-white p-6 text-center">
+      &copy; 2025 Pirate’s Kiss Kitchen. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Optional JS -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
